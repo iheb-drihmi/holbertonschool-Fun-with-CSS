@@ -1,0 +1,69 @@
+.toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.toggle-label {
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 15px;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+#toggle-0 {
+    display: none;
+}
+
+.toggle-inner {
+    background-color: #EBEBEB;
+    border: 2px solid #C7C7C7;
+    border-radius: 50px;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.toggle-inner::before {
+    content: "No";
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 70px;
+    color: #C7C7C7;
+
+}
+
+#toggle-0:checked + .toggle-label .toggle-inner::before {
+    content: "Yes";
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 25px;
+    color: white;
+
+}
+
+.toggle-switch {
+    display: block;
+    background-color: white;
+    border: 2px solid #C7C7C7;
+    border-radius: 100px; 
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    transition: 0.2s;
+}
+#toggle-0:checked + .toggle-label .toggle-inner {
+    background-color: #E1013C;
+}
+
+#toggle-0:checked + .toggle-label .toggle-switch {
+    margin-left: 90px;
+    transition: 0.2s;
+}

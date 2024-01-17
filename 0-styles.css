@@ -1,0 +1,40 @@
+html {
+    margin-top: 100px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 320px;
+    margin-right: 370px;
+    list-style-type: none;
+}
+
+
+li {
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    border: 3px solid #8D8D8D;
+    padding-top: 18px;
+    width: 230px;
+    height: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url("images/logos.png");
+    background-position: center;
+    background-size: 33rem, auto, contain;
+    background-repeat: no-repeat;
+    font-size: 32px;
+    font-weight: bold;    
+}
+
+
+li:first-child {
+    background-position: -8%;
+}
+
+li:last-child {
+    background-position: 108%;
+}
